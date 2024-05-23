@@ -5,7 +5,7 @@
     font-family: arial;
 }
 body{
-    background: url(../images/login/login_page.png) no-repeat;
+    background: url(./images/login/login_page.png) no-repeat;
     background-size: cover;
     background-position: center;
     height: 100vh;
