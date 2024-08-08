@@ -5,7 +5,7 @@
     font-family: arial;
 }
 body{
-    background: url(../images/login/login_page.png) no-repeat;
+    background: url(../images/login/login_page.webp) no-repeat;
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -26,6 +26,7 @@ header{
     height: 100px;
     display: flex;
     justify-content: space-between;
+    top: 0;
     align-items: center;
     position: absolute;
     z-index: 99;
@@ -39,7 +40,7 @@ header{
     height: 100vh;
     width: 250px;
     z-index: 999;
-    background-color: #6390a0;
+    background-color: #387e5b;
     backdrop-filter: blure(10px);
     box-shadow: -10px 0 10px rgba(103, 175, 223, 0.1);
     display: none;
@@ -98,7 +99,7 @@ header .search-box{
     width: 35px;
     height: 35px;
     border-radius: 30px;
-    background-color: rgb(26, 133, 221);
+    background-color: #387e5b;
     border: none;
     position: absolute;
     top: 3px;
@@ -126,7 +127,7 @@ header ul li a{
     padding-right: 20px;
 }
 header ul li a:hover{
-    border-bottom: 3px solid rgb(131, 204, 233);
+    border-bottom: 3px solid #66b18b;
 }
 .dropdown{
     position: relative;
@@ -150,6 +151,7 @@ header ul li a:hover{
     padding: 10px;
     margin: 0;
     border-bottom: 1px solid #000;
+    font-size: 13px;
 }
 .dropdown-menu li:last-child{
     border-bottom: none;
@@ -286,19 +288,19 @@ header .menu{
     border:none;
     border-radius: 3px;
     color: rgb(0, 0, 0);
-    background: rgba(120, 241, 245, 0.7);
+    background: #46b18b;
 }
 
 .form-submit-btn input:hover{
-    background: #227fd6;
-    color: rgb(255, 255, 255);
+    background: #56b18b;
+    color: #333533;
 }
 
 /*-------------------------------------------- loyalty scheme benifits ---------------------------*/
 
 .benifits{
     box-sizing: border-box;
-    border: 2px solid rgb(39, 78, 163);
+    border: 2px solid #36b18b;
     border-radius: 30px;
     background-color: #fff;
     width: 700px;
@@ -316,7 +318,7 @@ header .menu{
     margin-bottom: 20px;
 }
 
-/*------------------------------------------------- footer section ----------------------------------*/
+/*----------------------------------------------- footer section -----------------------------------*/
 
 footer{
     background-color: #111;
@@ -371,12 +373,14 @@ footer{
 }
 .footer-par{
     box-sizing: border-box;
-    width: 800px;
+    width: 100%;
     font-size: 13px;
     color: #fff;
-    margin-left: 250px;
     margin-bottom: 20px;
-
+}
+.footer-par h4 {
+    font-size: 12px;
+    text-align: center;
 }
 .footerBottom{
     background-color: #000;
@@ -388,7 +392,6 @@ footer{
     float: left;
     font-size: 12px;
     margin-top: 12px;
-    margin-left: 30px;
 }
 .footerBottom img{    
     float: right;

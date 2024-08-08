@@ -32,7 +32,7 @@ header{
     height: 100vh;
     width: 250px;
     z-index: 999;
-    background-color: #6390a0;
+    background-color: #387e5b;
     backdrop-filter: blure(10px);
     box-shadow: -10px 0 10px rgba(103, 175, 223, 0.1);
     display: none;
@@ -91,7 +91,7 @@ header .search-box{
     width: 35px;
     height: 35px;
     border-radius: 30px;
-    background-color: rgb(26, 133, 221);
+    background-color: #387e5b;
     border: none;
     position: absolute;
     top: 3px;
@@ -119,7 +119,7 @@ header ul li a{
     padding-right: 20px;
 }
 header ul li a:hover{
-    border-bottom: 3px solid  rgb(131, 204, 233);
+    border-bottom: 3px solid  #66b18b;
 }
 header .menu{
     color: #fff;
@@ -149,6 +149,7 @@ header .menu{
     padding: 10px;
     margin: 0;
     border-bottom: 1px solid #000;
+    font-size: 13px;
 }
 .dropdown-menu li:last-child{
     border-bottom: none;
@@ -163,7 +164,7 @@ header .menu{
 .box-22 .container {
     width: 50%;
     box-sizing: border-box;
-    border-top: 3px solid #1d7bc9;
+    border-top: 4px solid #387e5b;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -176,7 +177,7 @@ header .menu{
 }
 .container h1{
     color: black;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     margin-top: 20px;
 }
 .container iframe{
@@ -195,6 +196,7 @@ header .menu{
     font-size: 18px;
     font-weight: 500;
     margin-top: 30px;
+    margin-bottom: 50px;
 }
 
 .banner img{
@@ -208,7 +210,7 @@ header .menu{
 .aboutTable{
     max-width: 800px;
     margin: auto;
-    background: #fff;
+    background: #85c7a6;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -242,6 +244,9 @@ th {
 tr:nth-child(even) {
     background-color: #f9f9f9;
 }
+tr{
+    background-color: #fff;
+}
 
 tr:hover {
     background-color: #f1f1f1;
@@ -251,7 +256,7 @@ td {
     vertical-align: top;
 }
 tfoot td{
-    padding-left: 140px;
+    text-align: center;
 }
 
 
@@ -315,7 +320,6 @@ footer{
     color: #fff;
     margin-bottom: 20px;
 }
-
 .footer-par p {
     text-align: center;
 }
@@ -385,7 +389,11 @@ footer{
         margin-left: -50px;
     }
 }
-
+@media(max-width: 600px){
+    .aboutTable{
+        font-size: 12px;
+    }
+}
 @media (max-width: 700px){
     .footerNav ul{
         flex-direction: column;
